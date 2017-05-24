@@ -1,0 +1,237 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+input:focus, textarea:focus, button:focus {outline: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+font-family: 'Roboto Condensed', sans-serif;
+}
+a:hover { text-decoration: none }
+.hero-area-logo h3{
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+.welcome-hero-area{
+    background-image: url(../img/food.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+body,html {
+  height: 100%;
+}
+.welcome-hero-area {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.header-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 15px 0px;
+}
+.logo a {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding-bottom: 4px;
+}
+.logo h1 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.logo a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mainmenu li {
+  display: inline-block;
+  padding-left: 30px;
+}
+.mainmenu li a {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    font-size: 18px;
+    transition: .5s;
+  
+}
+.mainmenu li a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+}
+.mainmenu li a:hover:after{
+    opacity: 1;
+    background: #fff;
+   
+} 
+
+.mainmenu {
+  margin-top: 6px;
+}
+.welcome-hero-area::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #333;
+  z-index: -1;
+  opacity: .3;
+}
+.hero-area-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.hero-area-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-area-logo h3 {
+	color: #C59D5F;
+	font-size: 100px;
+	line-height: 44px;
+	margin: 0;
+}
+.hero-area-logo h2 {
+	color: #fff;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+.bordered-area {
+	overflow: hidden;
+	width: 247px;
+	margin: 0 auto;
+}
+.left-border, .right-border {
+    height: 2px;
+    width: 35%;
+    float: left;
+    background: #fff;
+    margin-top: 7px;
+    position: relative;
+}
+
+.bordered-area i.fa {
+    float: left;
+    margin: 0 20px;
+    color: #C59D5F;
+    font-size: 20px;
+}
+
+.hero-area-logo {
+  text-transform: uppercase;
+  color: #fff;
+}
+.hero-area-logo p {
+  margin-top: 15px;
+}
+.hero-area-logo h3 {
+  text-transform: none;
+}
+.right-border{
+    margin-left: 10px;
+}
+.right-border::before {
+	width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-right: 7px solid #fff;
+	border-bottom: 4px solid transparent;
+	position: absolute;
+	right: -4px;
+	content: "";
+	top: -2px;
+}
+.left-border::before { 
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 7px solid #fff; 
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    left: 0;
+    content: "";
+    top: -2px;
+}
+.hero-area-logo p {
+	letter-spacing: 3px;
+}
+.scroll-to-about{
+    color: :#fff;
+    display: inline-block;
+    font-size: 40px;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    transition: .4s;
+    animation: updown 1s ease 0s infinite;
+    bottom: 15px;
+    animation-name: bounce;
+    height: 50px;
+}
+.scroll-to-about {
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.scroll-to-about:hover{
+    color: #C59D5F;
+}
+a.scroll-to-about{
+    color: #fff;
+}
